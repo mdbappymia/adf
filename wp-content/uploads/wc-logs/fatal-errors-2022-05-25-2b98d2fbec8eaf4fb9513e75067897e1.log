@@ -1,0 +1,28 @@
+2022-05-25T14:18:29+00:00 CRITICAL Uncaught Error: Call to undefined function wp_filesize() in C:\xampp\htdocs\ecommers\wp-admin\includes\image.php:248
+Stack trace:
+#0 C:\xampp\htdocs\ecommers\wp-admin\includes\image.php(494): wp_create_image_subsizes('C:\\xampp\\htdocs...', '157')
+#1 C:\xampp\htdocs\ecommers\wp-content\plugins\woocommerce\includes\class-wc-regenerate-images.php(402): wp_generate_attachment_metadata('157', 'C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ecommers\wp-content\plugins\woocommerce\includes\class-wc-regenerate-images.php(251): WC_Regenerate_Images::resize_and_return_image('157', Array, 'woocommerce_thu...', false)
+#3 C:\xampp\htdocs\ecommers\wp-includes\class-wp-hook.php(307): WC_Regenerate_Images::maybe_resize_image(Array, '157', 'woocommerce_thu...', false)
+#4 C:\xampp\htdocs\ecommers\wp-includes\plugin.php(189): WP_Hook->apply_filters(Array, Array)
+#5 C:\xampp\htdocs\ecommers\wp-includes\media.php(992): apply_filters('wp_get_attachme...', Array, '157', 'woocommerce_thu...', false)
+#6 C:\xampp\htdocs\ecommers\wp-includes\media.php(1029): wp_get_attachment_image_src('157', 'woocommerce_thu...', false)
+#7 C:\xampp\htdocs\ecommers\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php(1921): wp_get_attachment_image('157', 'woocommerce_thu...', false, Array)
+#8 C:\xampp\htdocs\ecommers\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1414): WC_Product->get_image('woocommerce_thu...')
+#9 C:\xampp\htdocs\ecommers\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1368): woocommerce_get_product_thumbnail()
+#10 C:\xampp\htdocs\ecommers\wp-includes\class-wp-hook.php(307): woocommerce_template_loop_product_thumbnail('')
+#11 C:\xampp\htdocs\ecommers\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#12 C:\xampp\htdocs\ecommers\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\ecommers\wp-content\themes\flatsome\woocommerce\content-product.php(51): do_action('flatsome_woocom...')
+#14 C:\xampp\htdocs\ecommers\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#15 C:\xampp\htdocs\ecommers\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#16 C:\xampp\htdocs\ecommers\wp-content\themes\flatsome\woocommerce\layouts\category.php(65): wc_get_template_part('content', 'product')
+#17 C:\xampp\htdocs\ecommers\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#18 C:\xampp\htdocs\ecommers\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#19 C:\xampp\htdocs\ecommers\wp-content\themes\flatsome\woocommerce\archive-product.php(26): wc_get_template_part('layouts/categor...', 'left-sidebar')
+#20 C:\xampp\htdocs\ecommers\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#21 C:\xampp\htdocs\ecommers\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#22 C:\xampp\htdocs\ecommers\index.php(17): require('C:\\xampp\\htdocs...')
+#23 {main}
+  thrown in C:\xampp\htdocs\ecommers\wp-admin\includes\image.php on line 248
+
